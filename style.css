@@ -1,0 +1,66 @@
+@font-face {
+  font-family: "SF";
+  src: url(./SFNSDisplay-Regular.otf);
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "SF";
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: black;
+}
+
+.box {
+  width: 50px;
+  height: 50px;
+  border: 1px black solid;
+  border-radius: 50%;
+  background-color: white;
+  cursor: pointer;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.box_orange {
+  background-color: orange;
+}
+.box_gray {
+  background-color: gray;
+}
+
+.calc {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.container {
+  width: 300px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(6, 1fr);
+  gap: 5px;
+  justify-items: right;
+}
+
+.box_17 {
+  grid-column: 1/span 2;
+  width: 135px;
+  border-radius: 30px;
+}
+
+.res {
+  color: white;
+  align-self: end;
+  font-size: 48px;
+  grid-column: 1/5;
+}/*# sourceMappingURL=style.css.map */
